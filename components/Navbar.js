@@ -31,6 +31,7 @@ export default function Navbar() {
     }
   })
 
+  //Set height of dropdown menu
   useEffect(() => {
     if (open) {
       const linksHeight = linksRef.current.getBoundingClientRect().height
@@ -59,7 +60,7 @@ export default function Navbar() {
             <Link href={url} key={id}>
               <a
                 className={`p-4 hover:text-gray-600 ${
-                  router.asPath === url ? ' font-semibold ' : ''
+                  router.asPath === url ? 'font-semibold' : ''
                 } `}
               >
                 {text}
