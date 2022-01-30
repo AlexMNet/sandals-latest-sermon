@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 const ReactHlsPlayer = dynamic(() => import('react-hls-player'), { ssr: false })
+import slugify from '../../functions/slugify'
 import {
   FacebookShareButton,
   FacebookMessengerIcon,
@@ -10,12 +11,8 @@ import {
 } from 'react-share'
 
 export default function LatestSermon({ data, url }) {
-  console.log(url)
-  const slugify = (title) => {
-    return title.split(' ').join('-')
-  }
-
   const fullUrl = `${url}watch/${slugify(data.title)}`
+
   return (
     <>
       <Head>
