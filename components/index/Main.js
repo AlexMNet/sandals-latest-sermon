@@ -9,7 +9,7 @@ export default function main({ data }) {
   const path = `/watch/${slugify(data.title)}/`
 
   return (
-    <div className="container mx-auto mt-5 max-w-[67rem] p-3">
+    <section className="container mx-auto mt-5 mb-20 max-w-[67rem] p-3">
       <div className="flex flex-col items-start justify-between gap-4 md:flex-row">
         {/* Left Content */}
         <div>
@@ -55,6 +55,6 @@ export default function main({ data }) {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
