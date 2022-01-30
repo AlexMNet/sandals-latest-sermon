@@ -25,10 +25,10 @@ export default function Home({ data }) {
       </Head>
       {/* <Navbar /> */}
       <Header />
-      <div className="container mx-auto mt-5 max-w-screen-lg">
-        <div className="flex flex-col items-start justify-between gap-3 md:flex-row">
+      <div className="container mx-auto mt-5 max-w-[67rem] p-3">
+        <div className="flex flex-col items-start justify-between gap-4 md:flex-row">
           <div className="">
-            <h1 className="text-3xl">Join Us Online</h1>
+            <h1 className="mb-4 text-3xl">Latest Sermon</h1>
             <div
               className="relative cursor-pointer"
               onClick={() =>
@@ -50,43 +50,41 @@ export default function Home({ data }) {
               />
             </div>
           </div>
-          <div className="">
-            <div className="">
-              <h1 className="text-3xl">Join Us Online</h1>
-              <div className=" mt-4 inline-block bg-gray-200 p-4">
-                <h3 className="font-bold text-gray-600">
-                  Online Weekend Service Times
-                </h3>
-                <ul className="space-y-3">
-                  <li>
-                    <p className="text-gray-700">
-                      Saturday, January 29, 2022, 5:00 PM (PST)
-                    </p>
-                  </li>
-                  <li>
-                    <p className="text-gray-700">
-                      Saturday, January 29, 2022, 5:00 PM (PST)
-                    </p>
-                  </li>
-                  <li>
-                    <p className="text-gray-700">
-                      Saturday, January 29, 2022, 5:00 PM (PST)
-                    </p>
-                  </li>
-                  <li>
-                    <p className="text-gray-700">
-                      Saturday, January 29, 2022, 5:00 PM (PST)
-                    </p>
-                  </li>
-                </ul>
-                <div className="mt-3 flex flex-col items-start space-y-2">
-                  <button className=" rounded-md bg-red-600 px-5 py-2 text-white hover:bg-red-500">
-                    Join Us Online
-                  </button>
-                  <button className="rounded-md bg-red-600 px-5 py-2 text-white hover:bg-red-500">
-                    Find A Campus
-                  </button>
-                </div>
+          <div className="flex flex-col">
+            <h1 className="mb-4 text-3xl">Join Us Online</h1>
+            <div className="inline-block bg-gray-200 p-4">
+              <h3 className="font-bold text-gray-600">
+                Online Weekend Service Times
+              </h3>
+              <ul className="space-y-3">
+                <li>
+                  <p className="text-gray-700">
+                    Saturday, January 29, 2022, 5:00 PM (PST)
+                  </p>
+                </li>
+                <li>
+                  <p className="text-gray-700">
+                    Saturday, January 29, 2022, 5:00 PM (PST)
+                  </p>
+                </li>
+                <li>
+                  <p className="text-gray-700">
+                    Saturday, January 29, 2022, 5:00 PM (PST)
+                  </p>
+                </li>
+                <li>
+                  <p className="text-gray-700">
+                    Saturday, January 29, 2022, 5:00 PM (PST)
+                  </p>
+                </li>
+              </ul>
+              <div className="mt-3 flex flex-col items-start space-y-2">
+                <button className=" rounded-md bg-red-600 px-5 py-2 text-white hover:bg-red-500">
+                  Join Us Online
+                </button>
+                <button className="rounded-md bg-red-600 px-5 py-2 text-white hover:bg-red-500">
+                  Find A Campus
+                </button>
               </div>
             </div>
           </div>
