@@ -21,9 +21,8 @@ export default function Home({ data }) {
     <div>
       <Head>
         <title>Sandals Church | Latest Sermon</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <Navbar /> */}
+
       <Header />
       <div className="container mx-auto mt-5 max-w-screen-lg">
         <div className="flex flex-col items-start justify-between gap-3 md:flex-row">
