@@ -10,8 +10,19 @@ class MyDocument extends Document {
     return (
       <Html className="h-full scroll-smooth">
         <Head />
-        <meta name="description" content="" />
-        <meta property="og:image" content="" />
+        <meta
+          name="description"
+          content="Sandals Church exists to be real with ourselves, God and others. Whether you're new to church, haven't been in a while, or are looking for a new place to call home, there is a place for you here.x"
+        />
+        <meta
+          property="og:image"
+          content="https://sandalschurch.com/wp-content/themes/sandalschurch/images/share_banner.jpg"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          href="https://sandalschurch.com/wp-content/themes/sandalschurch/images/global/fav.png"
+        />
         <body className="relative flex min-h-screen flex-col">
           <Main className="flex-auto" />
           <NextScript />
