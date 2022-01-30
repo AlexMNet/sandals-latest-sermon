@@ -26,6 +26,7 @@ export default function LatestSermon({ data, url }) {
           controls={true}
           width="100%"
           height="auto"
+          poster={data.image_hd}
         />
       </div>
       <div className="mt-5 space-y-3">
