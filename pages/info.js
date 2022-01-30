@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import { BsGithub } from 'react-icons/bs'
 
-export default function Contact() {
+export default function Info() {
   return (
-    <section className="container mx-auto mt-5 flex flex-col items-center justify-center">
+    <section className="container mx-auto mt-5 flex max-w-screen-lg flex-col items-center justify-center px-3">
       <h1 className="text-center text-6xl">Project Information</h1>
       <Link href="https://github.com/AlexMNet/sandals-latest-sermon">
         <a
@@ -17,6 +17,7 @@ export default function Contact() {
       <p className="text-center text-3xl text-gray-600">
         Thank you for taking time to view my project submission.
       </p>
+      <br />
       <p className="text-center text-3xl text-gray-600">
         Source code and project documentation can be found on github.
       </p>

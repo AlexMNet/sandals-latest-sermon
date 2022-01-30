@@ -9,10 +9,10 @@ export default function main({ data }) {
   const path = `/watch/${slugify(data.title)}/`
 
   return (
-    <section className="container mx-auto mt-5 mb-20 max-w-[67rem] p-3">
+    <main className="container mx-auto mt-5 mb-20 max-w-[67rem] p-3">
       <div className="flex flex-col items-start justify-between gap-4 md:flex-row">
         {/* Left Content */}
-        <div>
+        <section>
           <h1 className="mb-4 text-3xl">Latest Sermon</h1>
           <div
             className="relative cursor-pointer"
@@ -23,16 +23,15 @@ export default function main({ data }) {
             }
           >
             <img src={data.image_hd} alt="" width="660" className="relative" />
-
             <FaPlayCircle
               className="absolute left-1/2 top-1/2 text-8xl text-white opacity-50 hover:opacity-75"
               style={{ transform: 'translate(-50%, -50%)' }}
             />
           </div>
-        </div>
+        </section>
 
         {/* Right Content */}
-        <div className="flex flex-col">
+        <section className="flex flex-col">
           <h1 className="mb-4 text-3xl">Join Us Online</h1>
           <div className="inline-block bg-gray-200 p-4">
             <h3 className="font-bold text-gray-600">
@@ -54,8 +53,8 @@ export default function main({ data }) {
               </button>
             </div>
           </div>
-        </div>
+        </section>
       </div>
-    </section>
+    </main>
   )
 }

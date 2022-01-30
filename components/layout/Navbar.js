@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { navLinks } from '../data/navlinks'
-import Hamburger from './Hamburger'
+import { navLinks } from '../../data/navlinks'
+import Hamburger from '../Hamburger'
+import { BsGithub } from 'react-icons/bs'
 
 export default function Navbar() {
   const router = useRouter()
@@ -56,6 +57,15 @@ export default function Navbar() {
           <Hamburger />
         </div>
         <div className="hidden pr-8 md:block">
+          <a
+            href="https://github.com/AlexMNet/sandals-latest-sermon"
+            target="_blank"
+          >
+            <button className="rounded-md bg-blue-600 px-5 py-2 text-white hover:bg-blue-700">
+              <span>Github</span>
+              <BsGithub className=" ml-2 mb-1 inline-block" />
+            </button>
+          </a>
           {navLinks.map(({ id, url, text }) => (
             <Link href={url} key={id}>
               <a
