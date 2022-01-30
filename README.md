@@ -37,3 +37,7 @@ The dynamically rendered pages can be bookmared and shared.
 ### Data Directory
 
 This folder contains files for navbar links and service times. This enables me to clean up some of the HTML by storing the information there and then iterating over the data to render the HTML.
+
+### TailwindCSS
+
+Some love it, others hate it! It can make your HTML look a little crazy and there are ways to mitigate that but its a great tool to put together a website rather quickly. If this project was meant for production and I still wanted to use TailwindCSS I would create custom classes to help clean up the css classes in HTML dramatically. My next choice would be styled components.
