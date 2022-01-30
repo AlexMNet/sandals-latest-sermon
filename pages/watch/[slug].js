@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 const ReactHlsPlayer = dynamic(() => import('react-hls-player'), { ssr: false })
-import slugify from '../../functions/slugify'
+import { slugify, parseDate } from '../../functions/functions'
 import {
   FacebookShareButton,
   FacebookMessengerIcon,
@@ -12,6 +12,7 @@ import {
 
 export default function LatestSermon({ data, url }) {
   const fullUrl = `${url}watch/${slugify(data.title)}`
+  const date = parseDate(data.date)
 
   return (
     <>
@@ -31,7 +32,7 @@ export default function LatestSermon({ data, url }) {
         </div>
         <div className="mt-5 space-y-3">
           <div className="flex justify-between">
-            <small className="text-gray-400">{data.date}</small>
+            <small className="text-gray-400">{date}</small>
             <div className="space-x-2">
               <FacebookShareButton url={fullUrl}>
                 <FacebookMessengerIcon size={30} round />

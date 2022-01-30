@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import { FaPlayCircle } from 'react-icons/fa'
-import slugify from '../../functions/slugify'
+import { slugify } from '../../functions/functions'
 import { serviceTimes } from '../../data/serviceTimes'
 
 export default function main({ data }) {
@@ -30,6 +30,7 @@ export default function main({ data }) {
             />
           </div>
         </div>
+
         {/* Right Content */}
         <div className="flex flex-col">
           <h1 className="mb-4 text-3xl">Join Us Online</h1>
