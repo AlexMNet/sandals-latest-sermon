@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 import React from 'react'
-import Main from '../components/index/main'
+import Main from '../components/index/Main'
 
 export default function Home({ data }) {
   return (
