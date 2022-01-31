@@ -18,7 +18,7 @@ export default function Main({ data, url }) {
     <main className="container mx-auto mb-20 mt-6 max-w-screen-lg p-3">
       <div>
         <ReactHlsPlayer
-          src="https://player.vimeo.com/external/671362241.m3u8?s=a66e3ebecafca344630a146bc5131f1b776b49e0"
+          src={data.hls_url}
           autoPlay={false}
           controls={true}
           width="100%"
