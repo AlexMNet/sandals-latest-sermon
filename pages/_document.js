@@ -23,6 +23,25 @@ class MyDocument extends Document {
           type="image/png"
           href="https://sandalschurch.com/wp-content/themes/sandalschurch/images/global/fav.png"
         />
+        <link
+          rel="apple-touch-icon"
+          href="somedir/apple-touch-icon-iphone-60x60.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="60x60"
+          href="somedir/apple-touch-icon-ipad-76x76.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="114x114"
+          href="somedir/apple-touch-icon-iphone-retina-120x120.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="144x144"
+          href="somedir/apple-touch-icon-ipad-retina-152x152.png"
+        />
         <body className="relative flex min-h-screen flex-col">
           <Main className="flex-auto" />
           <NextScript />
